@@ -14,7 +14,7 @@ while True :
 
 	
 	if os.path.isfile("/home/seloco2/nfs/{}.jpg" .format(detect)) :
-		call(['./darknet', 'detect', 'cfg/yolov3.cfg', 'yolov3.weights', '/home/seloco2/nfs/{}.jpg'.format(detect)])
+		call(['/home/seloco2/darknet/darknet', 'detect', 'cfg/yolov3.cfg', 'yolov3.weights', '/home/seloco2/nfs/{}.jpg'.format(detect)])
 		difference = (df.datetime.now() - detect_time).seconds -1
 
 	else :
